@@ -1,0 +1,20 @@
+PODS:
+  - CocoaAsyncSocket (7.6.3)
+  - CTMediator (18)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - CTMediator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
+    - CTMediator
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  CTMediator: 420e9d90f9f1fd740caf2238ed7ed64dc621c5b7
+
+PODFILE CHECKSUM: 2bbeecfc1092902e388ad4c5408bd9c53e6531af
+
+COCOAPODS: 1.5.2
