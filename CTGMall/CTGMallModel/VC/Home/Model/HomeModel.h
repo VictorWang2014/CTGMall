@@ -13,6 +13,9 @@
 
 @property (nonatomic, strong) NSMutableArray *listArray;
 
+// 获取首页collectionCell类型
 - (NSArray *)collectionCellClassArray;
+
+- (void)handleTitleBannerWithDictionary:(NSDictionary *)dictionary;
 
 @end

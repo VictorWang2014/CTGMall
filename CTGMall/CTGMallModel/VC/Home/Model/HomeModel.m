@@ -16,19 +16,8 @@
     self = [super init];
     if (self) {
         [self test];
-        [self requestBanner];
     }
     return self;
-}
-
-- (void)requestBanner {
-    NSURL *url = [NSURL URLWithString:kHomeTitleBannerUrl];
-    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        NSError *err = NULL;
-        id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&err];
-        NSLog(@"%@ %@", jsonObj, data);
-    }];
-    [task resume];
 }
 
 #pragma mark - public
@@ -47,6 +36,11 @@
     return tmpArray;
 }
 
+- (void)handleTitleBannerWithDictionary:(NSDictionary *)dictionary {
+    
+}
+
+#pragma mark - private
 - (void)test {
     NSArray *array = @[
                        @[

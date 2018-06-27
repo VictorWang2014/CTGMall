@@ -17,6 +17,8 @@
 #import "HomeViewController.h"
 #import <objc/message.h>
 #import "HomeModel.h"
+#import "CTGHomeRequest.h"
+#import "CTGHomeDataAdaptor.h"
 #import "HomeHeaders.h"
 #import "VCHeaders.h"
 #import "CTGCommonDefine.h"
@@ -27,6 +29,7 @@
 
 @property (nonatomic, strong) UICollectionView *collectView;
 @property (nonatomic, strong) HomeModel *model;
+@property (nonatomic, strong) CTGHomeRequest *request;
 
 @end
 
@@ -35,6 +38,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.model = [[HomeModel alloc] init];
+    self.request = [[CTGHomeRequest alloc] init];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
     self.navigationItem.title = @"首页";
@@ -52,6 +56,13 @@
     UIBarButtonItem *rightTest = [[UIBarButtonItem alloc] initWithTitle:@"Test" style:UIBarButtonItemStylePlain target:self action:@selector(test)];
     self.navigationItem.rightBarButtonItem = rightTest;
     [self registerCollectionCellClass];
+    
+    [self.request requestHomeBannerSuccess:^(id data) {
+        NSDictionary *object = [CTGHomeDataAdaptor adaptorTitleBannerWithJsonObject:data];
+        
+    } failure:^(id data) {
+        
+    }];
 }
 
 - (void)test {
@@ -87,7 +98,6 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
     NSArray *array = [self.model.listArray objectAtIndex:indexPath.section];
     if ([array isKindOfClass:[NSArray class]]) {
         NSDictionary *dic = [array objectAtIndex:indexPath.row];
