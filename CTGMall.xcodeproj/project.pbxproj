@@ -79,6 +79,8 @@
 		8442A73E20AC75F000884278 /* CTGGoodsNumbersTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442A73D20AC75F000884278 /* CTGGoodsNumbersTableViewCell.m */; };
 		8442A74220AC794000884278 /* CTGGoodsIntroduceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442A74120AC794000884278 /* CTGGoodsIntroduceTableViewCell.m */; };
 		8442A74720AC7A2400884278 /* CTGGoodsBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8442A74620AC7A2400884278 /* CTGGoodsBottomView.m */; };
+		844D0E1D20E3D5F500465B59 /* CTGHomeDataAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 844D0E1C20E3D5F500465B59 /* CTGHomeDataAdaptor.m */; };
+		844D0E2020E3D72100465B59 /* CTGHomeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 844D0E1F20E3D72100465B59 /* CTGHomeRequest.m */; };
 		8465978020A1EC43003E184E /* CTGTitleScrollCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465977F20A1EC43003E184E /* CTGTitleScrollCollectionViewCell.m */; };
 		8465978F20A1EDF5003E184E /* VCHeadScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465978820A1EDF4003E184E /* VCHeadScrollView.m */; };
 		8465979020A1EDF5003E184E /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465978A20A1EDF5003E184E /* NSObject+Category.m */; };
@@ -280,6 +282,10 @@
 		8442A74520AC7A2400884278 /* CTGGoodsBottomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTGGoodsBottomView.h; sourceTree = "<group>"; };
 		8442A74620AC7A2400884278 /* CTGGoodsBottomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGGoodsBottomView.m; sourceTree = "<group>"; };
 		8442A74820AC7BFC00884278 /* CTGGoodsHeads.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTGGoodsHeads.h; sourceTree = "<group>"; };
+		844D0E1B20E3D5F500465B59 /* CTGHomeDataAdaptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTGHomeDataAdaptor.h; sourceTree = "<group>"; };
+		844D0E1C20E3D5F500465B59 /* CTGHomeDataAdaptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGHomeDataAdaptor.m; sourceTree = "<group>"; };
+		844D0E1E20E3D72100465B59 /* CTGHomeRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTGHomeRequest.h; sourceTree = "<group>"; };
+		844D0E1F20E3D72100465B59 /* CTGHomeRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGHomeRequest.m; sourceTree = "<group>"; };
 		8465977E20A1EC43003E184E /* CTGTitleScrollCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTGTitleScrollCollectionViewCell.h; sourceTree = "<group>"; };
 		8465977F20A1EC43003E184E /* CTGTitleScrollCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGTitleScrollCollectionViewCell.m; sourceTree = "<group>"; };
 		8465978320A1EDF4003E184E /* VCHeadScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCHeadScrollView.h; sourceTree = "<group>"; };
@@ -1076,6 +1082,10 @@
 			children = (
 				968B8E3120A7D15400E9FF2F /* HomeModel.h */,
 				968B8E3220A7D15400E9FF2F /* HomeModel.m */,
+				844D0E1B20E3D5F500465B59 /* CTGHomeDataAdaptor.h */,
+				844D0E1C20E3D5F500465B59 /* CTGHomeDataAdaptor.m */,
+				844D0E1E20E3D72100465B59 /* CTGHomeRequest.h */,
+				844D0E1F20E3D72100465B59 /* CTGHomeRequest.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1305,6 +1315,7 @@
 				84CA140E20ADD04100DE7B35 /* CTGMyOrderViewController.m in Sources */,
 				8475137020CD6F8A008A99DA /* CTGConfirmOrderViewController.m in Sources */,
 				84FD7BF720A5E58E007762BE /* CTGNoticeScrollView.m in Sources */,
+				844D0E1D20E3D5F500465B59 /* CTGHomeDataAdaptor.m in Sources */,
 				84FD7BF420A5E56F007762BE /* CTGNoticeScrollCollectionViewCell.m in Sources */,
 				840D94E120A491D9001E9B06 /* UIImage+WebP.m in Sources */,
 				84C123F520A08D8D001CA679 /* AppDelegate.m in Sources */,
@@ -1355,6 +1366,7 @@
 				84CA141420ADD0C400DE7B35 /* CTGMyOrderPageView.m in Sources */,
 				840D94E820A491D9001E9B06 /* FLAnimatedImageView+WebCache.m in Sources */,
 				8438603B20D7AB010053066D /* CTGShipAddressModel.m in Sources */,
+				844D0E2020E3D72100465B59 /* CTGHomeRequest.m in Sources */,
 				8409966B20D169150048698B /* CTGShopCartModel.m in Sources */,
 				84CFB0A520C047350092E0AC /* CTGPersonalTagTableViewCell.m in Sources */,
 				84C1243220A0918B001CA679 /* HomeViewController.m in Sources */,

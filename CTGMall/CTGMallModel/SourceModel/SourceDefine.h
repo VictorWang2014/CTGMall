@@ -9,6 +9,14 @@
 #ifndef SourceDefine_h
 #define SourceDefine_h
 
+typedef NS_ENUM(NSInteger, CTGDataCallBackType) {
+    CTGDataCallBackTypeNone,
+    CTGDataCallBackSuccess,
+    CTGDataCallBackFailure
+};
+
+typedef void(^CTGDataCallBack)(id data);
+
 #import "UIImage+imageSource.h"
 
 #define kCTGDomainName @"http://api.pad001.com/v2/"
