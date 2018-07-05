@@ -58,9 +58,9 @@
 //    CTGGoodsDetailViewController *vc = [[CTGGoodsDetailViewController alloc] init];
 //    CTGMyOrderViewController *vc = [[CTGMyOrderViewController alloc] init];
 //    CTGConfirmOrderViewController *vc = [[CTGConfirmOrderViewController alloc] initWithNibName:@"CTGConfirmOrderViewController" bundle:nil];
-    CTGRecoverPasswordViewController *vc = [[CTGRecoverPasswordViewController alloc] init];
+//    CTGRecoverPasswordViewController *vc = [[CTGRecoverPasswordViewController alloc] init];
+    VCTestViewController *vc = [[VCTestViewController alloc] init];
     vc.hidesBottomBarWhenPushed = YES;
-//    VCTestViewController *vc = [[VCTestViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

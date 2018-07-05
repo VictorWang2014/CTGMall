@@ -9,6 +9,7 @@
 #import "VCTestViewController.h"
 #import "CTGImageScrollView.h"
 #import "NSObject+Category.h"
+#import "CTGMyOrderPageView.h"
 
 @interface VCTestViewController () {
     CTGImageScrollView *_scrll;
@@ -27,9 +28,11 @@
                        @"http://mall.pad001.com/data/afficheimg/20161114uxmgov.png",
                        @"http://mall.pad001.com/data/afficheimg/20161114ypdlyr.jpg"
                        ];
-    _scrll = [[CTGImageScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.vcwidth, 200)];
-    _scrll.listArray = [NSMutableArray arrayWithArray:array];
-    [self.view addSubview:_scrll];
+//    _scrll = [[CTGImageScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.vcwidth, 200)];
+//    _scrll.listArray = [NSMutableArray arrayWithArray:array];
+//    [self.view addSubview:_scrll];
+    CTGMyOrderPageView *view = [[CTGMyOrderPageView alloc] initWithFrame:CGRectMake(0, 0, self.view.vcwidth, self.view.vcheight)];
+    [self.view addSubview:view];
 }
 
 @end

@@ -121,6 +121,7 @@
 		84FD7BF420A5E56F007762BE /* CTGNoticeScrollCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD7BF320A5E56F007762BE /* CTGNoticeScrollCollectionViewCell.m */; };
 		84FD7BF720A5E58E007762BE /* CTGNoticeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD7BF620A5E58E007762BE /* CTGNoticeScrollView.m */; };
 		92E47E40A6D35A1CECA491B6 /* libPods-CTGMall.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E81F643A1497C92E2293A759 /* libPods-CTGMall.a */; };
+		967F842720EDB18600C0CB43 /* VCAppMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 967F842620EDB18600C0CB43 /* VCAppMonitor.m */; };
 		968B8E3320A7D15400E9FF2F /* HomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 968B8E3220A7D15400E9FF2F /* HomeModel.m */; };
 /* End PBXBuildFile section */
 
@@ -359,6 +360,8 @@
 		84FD7BF320A5E56F007762BE /* CTGNoticeScrollCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGNoticeScrollCollectionViewCell.m; sourceTree = "<group>"; };
 		84FD7BF520A5E58E007762BE /* CTGNoticeScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTGNoticeScrollView.h; sourceTree = "<group>"; };
 		84FD7BF620A5E58E007762BE /* CTGNoticeScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTGNoticeScrollView.m; sourceTree = "<group>"; };
+		967F842520EDB18600C0CB43 /* VCAppMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VCAppMonitor.h; sourceTree = "<group>"; };
+		967F842620EDB18600C0CB43 /* VCAppMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VCAppMonitor.m; sourceTree = "<group>"; };
 		968B8E3120A7D15400E9FF2F /* HomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModel.h; sourceTree = "<group>"; };
 		968B8E3220A7D15400E9FF2F /* HomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModel.m; sourceTree = "<group>"; };
 		968B8E3420A7D43800E9FF2F /* HomeHeaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeHeaders.h; sourceTree = "<group>"; };
@@ -925,6 +928,7 @@
 				8465979420A1F080003E184E /* VCHeaders.h */,
 				8465979D20A3311B003E184E /* VCTestViewController.h */,
 				8465979E20A3311B003E184E /* VCTestViewController.m */,
+				967F842420EDB16C00C0CB43 /* VCAppMonitor */,
 				84134D2A20C58D220031DEFC /* VCSegmentView */,
 				840D94A120A491C3001E9B06 /* ThirdParty */,
 				84BC186420A9D6FF00B718F2 /* VCButton */,
@@ -1056,6 +1060,15 @@
 				8438604420D7C6FF0053066D /* CTGRecoverPTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		967F842420EDB16C00C0CB43 /* VCAppMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				967F842520EDB18600C0CB43 /* VCAppMonitor.h */,
+				967F842620EDB18600C0CB43 /* VCAppMonitor.m */,
+			);
+			path = VCAppMonitor;
 			sourceTree = "<group>";
 		};
 		968B8E3020A7D11F00E9FF2F /* Model */ = {
@@ -1285,6 +1298,7 @@
 				840D94E320A491D9001E9B06 /* SDWebImageManager.m in Sources */,
 				840D94F720A491D9001E9B06 /* NSImage+WebCache.m in Sources */,
 				840D94F620A491D9001E9B06 /* UIImageView+WebCache.m in Sources */,
+				967F842720EDB18600C0CB43 /* VCAppMonitor.m in Sources */,
 				8409966120D165D80048698B /* CTGAddressTableViewCell.m in Sources */,
 				8442A74720AC7A2400884278 /* CTGGoodsBottomView.m in Sources */,
 				8438604020D7C5010053066D /* CTGRecoverPasswordViewController.m in Sources */,
